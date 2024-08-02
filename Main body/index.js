@@ -26,7 +26,7 @@ function drawGrid(size) {
         }
     }
 
-    // Reset cursor to the top-left corner
+    // Reset cursor to the left 
     currentX = 0;
     currentY = 0;
     drawCursor();
@@ -55,7 +55,7 @@ function moveCursor(dx, dy) {
     drawCursor();
 }
 
-// Event listener for keydown events
+// Event listener for keydown  
 document.addEventListener("keydown", (event) => {
     switch (event.key) {
         case "ArrowUp":
@@ -73,7 +73,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-// Reset button functionality
+// Reset button  
 resetBtn.addEventListener("click", () => {
     drawGrid(parseInt(gridSize.value));
 });
@@ -81,7 +81,7 @@ resetBtn.addEventListener("click", () => {
 // Initial grid setup
 drawGrid(parseInt(gridSize.value));
 
-// Redraw the grid when grid size changes
+// Redraw the grid 
 gridSize.addEventListener("change", () => {
     drawGrid(parseInt(gridSize.value));
 });
