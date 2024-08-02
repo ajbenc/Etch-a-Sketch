@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    block-size: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+#colorPicker {
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    inline-size: 65px;
+}
+
+#size {
+    cursor: pointer;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    inline-size: 400px;
+    border: 2px solid #333;
+    margin-block-end: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.grid-item:hoover {
+    background-color: black;
+}
